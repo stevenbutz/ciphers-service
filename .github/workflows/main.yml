@@ -33,6 +33,6 @@ jobs:
     - name: Build and push the image
       run: |
         docker login --username stevenbutz --password ${{secrets.ACCESS_TOKEN}} ghcr.io
-        docker build -t ghcr.io/stevenbutz/ciphers-service: latest --file Dockerfile .
+        docker build -t ghcr.io/stevenbutz/ciphers-service:latest --file Dockerfile .
         docker push ghcr.io/stevenbutz/ciphers-service:latest
         
